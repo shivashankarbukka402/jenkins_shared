@@ -1,4 +1,4 @@
-def call(String git_branch = null, String git_credentailes = null, String git_url = null) {
+def call(String git_branch = main, String git_credentailes = null, String git_url = null) {
   echo "This is git checkout shared library"
   checkout{[$class: 'GitSCM',
             branches: [[name: "${git_branch}"]],
